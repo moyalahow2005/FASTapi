@@ -8,6 +8,7 @@ class Item(BaseModel):
     name: str
     price: float
     is_offer: Union[bool, None] = None
+
 # added get endpoint
 @app.get("/")
 def read_root():
