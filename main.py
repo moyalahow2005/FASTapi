@@ -17,6 +17,7 @@ def read_root():
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
+# PUT endpoint added for the assignment part 2
 # new put endpoint added and edited
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item):
